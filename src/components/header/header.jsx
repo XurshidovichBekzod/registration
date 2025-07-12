@@ -20,6 +20,8 @@ const Header = () => {
     const explryData = useRef(null)
 
     const handleCreate = () => {
+    if(!fullName.trim() || !email.trim()) return null
+
         const information = {
             id: new Date().getTime(),
             fullName,
@@ -45,12 +47,12 @@ const Header = () => {
         setGender('')
         setOccupation('')
 
-        idType.current.value = "",
-        idNumber.current.value = "",
-        authorite.current.value = "",
-        dataRef.current.value = "",
-        stateRef.current.value = "",
-        explryData.current.value = ""
+         idType.current.value = "",
+         idNumber.current.value = "",
+         authorite.current.value = "",
+         dataRef.current.value = "",
+         stateRef.current.value = "",
+         explryData.current.value = ""
 
     }
 
